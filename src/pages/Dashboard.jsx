@@ -33,15 +33,11 @@ function Dashboard() {
     };
   }, [user, navigate, isError, message, dispatch]);
 
-  if (isLoading) {
-    return <h1 className=" self-center justify-self-center text-3xl font-bold my-10">Loading.....</h1>;
-  }
-
   return (
     <div className="grid grid-cols-2 px-8 pt-8 gap-4 h-full">
       <div className="flex flex-col gap-4">
-        <Overview expenses={expenses} username={user.name} />
-        <ExpenseList expenses={expenses} />
+        <Overview expenses={expenses} username={user.name} loading={isLoading} />
+        <ExpenseList expenses={expenses} loading={isLoading} />
       </div>
       <ExpenseForm />
     </div>
