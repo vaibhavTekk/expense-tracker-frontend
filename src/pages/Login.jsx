@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import { login, reset } from "../features/auth/authSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -35,7 +36,7 @@ function Login() {
   if (isLoading) {
     return (
       <>
-        <h1>Loading</h1>
+        <h1 className=" self-center justify-self-center text-3xl font-bold my-10">Loading.....</h1>
       </>
     );
   }

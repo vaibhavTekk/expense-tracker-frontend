@@ -40,7 +40,7 @@ function Register() {
   if (isLoading) {
     return (
       <>
-        <h1>Spinner</h1>
+        <h1 className=" self-center justify-self-center text-3xl font-bold my-10">Loading.....</h1>
       </>
     );
   }

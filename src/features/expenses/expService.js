@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/expense/";
+const API_URL = "https://vaibwalltexpensetracker.herokuapp.com/api/expense/";
 
 const getExpenses = async (token) => {
   const config = { headers: { Authorization: `Bearer ${token}` } };

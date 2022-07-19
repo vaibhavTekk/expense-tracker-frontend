@@ -34,7 +34,7 @@ function Dashboard() {
   }, [user, navigate, isError, message, dispatch]);
 
   if (isLoading) {
-    return <h1>Loading.....</h1>;
+    return <h1 className=" self-center justify-self-center text-3xl font-bold my-10">Loading.....</h1>;
   }
 
   return (
