@@ -18,8 +18,9 @@ function Dashboard() {
     if (message === "Unauthorized Action") {
       toast.error("Try Logging in again");
     }
+
     if (isError) {
-      toast.error(message);
+      toast.error(message + " .Try Logging in again");
     }
 
     if (!user) {
@@ -32,6 +33,10 @@ function Dashboard() {
       dispatch(reset());
     };
   }, [user, navigate, isError, message, dispatch]);
+
+  if (!user) {
+    return <h1>Redirecting to Login Page</h1>;
+  }
 
   return (
     <div className="grid md:grid-cols-2 grid-cols-1 md:px-8 px-4 md:pt-6 gap-4 h-auto">
