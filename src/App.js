@@ -23,7 +23,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-        <p className="text-white font-semibold mt-4 mb-6 text-center">Made with 💖 by Vaibhav T S</p>
+        <p className="text-white font-semibold mt-4 mb-6 text-center justify-self-end">Made with 💖 by Vaibhav T S</p>
       </div>
       <ToastContainer />
     </div>
