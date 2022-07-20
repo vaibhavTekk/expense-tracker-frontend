@@ -13,6 +13,8 @@ function ExpenseForm() {
     e.preventDefault();
     const expensedata = { amount, remarks };
     dispatch(post(expensedata));
+    setamount(0);
+    setremarks("");
   };
 
   return (
