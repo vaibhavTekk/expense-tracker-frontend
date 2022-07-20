@@ -16,11 +16,11 @@ function Overview({ expenses, username, loading }) {
     <>
       <div className="flex flex-col gap-2 p-8 bg-white drop-shadow-md rounded-md">
         <p className="font-bold text-2xl">Hi 👋 {username} !</p>
-        <p className="font-semibold text-4xl"> Your Total Expenses </p>
+        <p className="font-semibold md:text-4xl text-2xl"> Your Total Expenses </p>
         {loading ? (
-          <p className="font-bold text-4xl h-[96px] flex items-center text-center">Loading ...</p>
+          <p className="font-bold text-4xl md:h-[96px] h-auto flex items-center text-center">Loading ...</p>
         ) : (
-          <p className="font-bold text-8xl"> ₹ {value}</p>
+          <p className="font-bold md:text-8xl text-6xl"> ₹ {value}</p>
         )}
         {/*<p className="font-bold text-xl">That's ₹ up from last week</p>*/}
       </div>

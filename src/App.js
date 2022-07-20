@@ -11,8 +11,8 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <>
-      <div className="container flex flex-col bg-[url('./img/bg.svg')] bg-bottom bg-no-repeat bg-contain h-screen">
+    <div className="bg-[url('./img/bg.svg')] bg-bottom bg-no-repeat bg-contain">
+      <div className="flex flex-col h-screen overflow-y-scroll">
         <BrowserRouter>
           <Navbar />
           <Routes>
@@ -23,9 +23,10 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
+        <p className="text-white font-semibold mt-4 mb-6 text-center">Made with 💖 by Vaibhav T S</p>
       </div>
       <ToastContainer />
-    </>
+    </div>
   );
 }
 

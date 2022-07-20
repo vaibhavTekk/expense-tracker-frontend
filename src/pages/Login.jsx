@@ -36,38 +36,40 @@ function Login() {
   if (isLoading) {
     return (
       <>
-        <h1 className=" self-center justify-self-center text-3xl font-bold my-10">Loading.....</h1>
+        <h1 className="self-center justify-self-center text-3xl font-bold my-10">Loading.....</h1>
       </>
     );
   }
 
   return (
-    <div className="flex flex-col mx-auto w-1/4 my-auto justify-evenly items-center bg-white drop-shadow-lg rounded-lg p-6">
-      <h1 className="text-2xl font-bold m-4">Login</h1>
-      <form onSubmit={onSubmit} className="flex flex-col items-center gap-4 w-full">
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-          placeholder="Email"
-          className="input input-bordered w-full"
-        />
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
-          placeholder="Password"
-          className="input input-bordered w-full"
-        />
-        <input type="submit" className="btn btn-primary" value="Login" />
-      </form>
-      <Link to="/register" className="btn btn-link m-2">
-        New ? Create an Account
-      </Link>
+    <div className="flex flex-col justify-items-center items-center h-full">
+      <div className="flex flex-col mx-auto md:w-1/4 w-4/5 my-auto justify-evenly items-center bg-white drop-shadow-lg rounded-lg p-6">
+        <h1 className="text-2xl font-bold m-4">Login</h1>
+        <form onSubmit={onSubmit} className="flex flex-col items-center gap-4 w-full">
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            placeholder="Email"
+            className="input input-bordered w-full"
+          />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+            placeholder="Password"
+            className="input input-bordered w-full"
+          />
+          <input type="submit" className="btn btn-primary" value="Login" />
+        </form>
+        <Link to="/register" className="btn btn-link m-2">
+          New ? Create an Account
+        </Link>
+      </div>
     </div>
   );
 }

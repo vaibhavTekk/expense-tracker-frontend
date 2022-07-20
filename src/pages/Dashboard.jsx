@@ -34,7 +34,7 @@ function Dashboard() {
   }, [user, navigate, isError, message, dispatch]);
 
   return (
-    <div className="grid grid-cols-2 px-8 pt-8 gap-4 h-full">
+    <div className="grid md:grid-cols-2 grid-cols-1 md:px-8 px-4 md:pt-6 gap-4 h-auto">
       <div className="flex flex-col gap-4">
         <Overview expenses={expenses} username={user.name} loading={isLoading} />
         <ExpenseList expenses={expenses} loading={isLoading} />

@@ -13,7 +13,7 @@ function Navbar() {
     navigate("/");
   };
   return (
-    <div className="h-auto flex flex-row w-full bg-indigo-200 items-center justify-between px-8 py-2">
+    <div className="h-auto flex flex-row w-auto bg-indigo-200 items-center justify-between px-8 py-2">
       <Link to="/">
         <h1 className="font-bold text-2xl">Wallt.</h1>
       </Link>
