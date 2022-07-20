@@ -35,7 +35,7 @@ function Dashboard() {
   }, [user, navigate, isError, message, dispatch]);
 
   if (!user) {
-    return <h1>Redirecting to Login Page</h1>;
+    return <h1>Waiting for User Data .... </h1>;
   }
 
   return (
