@@ -13,7 +13,7 @@ function Navbar() {
     navigate("/");
   };
   return (
-    <div className="h-auto flex flex-row w-auto bg-indigo-200 items-center justify-between px-8 py-2">
+    <div className="h-auto flex flex-row w-auto bg-indigo-200 items-center justify-between md:px-8 px-2 py-2">
       <Link to="/">
         <h1 className="font-bold text-2xl">Wallt.</h1>
       </Link>
@@ -21,7 +21,7 @@ function Navbar() {
         {user ? (
           <>
             <li>
-              <p className="font-semibold text-2xl mx-6">{user.name}</p>
+              <p className="font-semibold md:text-2xl text-lg mx-6">{user.name}</p>
             </li>
             <li>
               <button className="btn btn-primary" onClick={handleLogout}>
