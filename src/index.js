@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
 import App from "./App";
+import { register, unregister } from "./serviceWorkerRegistration";
 
 import "./index.css";
 
@@ -16,3 +17,5 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
+
+register();
