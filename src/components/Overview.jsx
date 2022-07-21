@@ -14,7 +14,7 @@ function Overview({ expenses, username, loading }) {
 
   return (
     <>
-      <div className="flex flex-col gap-2 p-8 bg-white drop-shadow-md rounded-md">
+      <div className="flex flex-col gap-2 p-8 bg-base-100 drop-shadow-md rounded-md">
         <p className="font-bold text-2xl">Hi 👋 {username} !</p>
         <p className="font-semibold md:text-4xl text-2xl"> Your Total Expenses </p>
         {loading ? (

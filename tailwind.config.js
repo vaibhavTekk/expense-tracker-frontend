@@ -2,6 +2,7 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
+  darkMode: ["class", '[data-theme="dark"]'],
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -11,7 +12,16 @@ module.exports = {
     },
   },
   daisyui: {
-    themes: false,
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/colors/themes")["[data-theme=light]"],
+          primary: "blue",
+          "base-300": "#C7D2FE",
+        },
+      },
+      "dark",
+    ],
   },
   plugins: [require("daisyui"), require("tailwind-scrollbar")],
 };

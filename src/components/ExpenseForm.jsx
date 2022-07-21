@@ -18,7 +18,7 @@ function ExpenseForm() {
   };
 
   return (
-    <div className="bg-white drop-shadow-md rounded-md h-fit">
+    <div className="bg-base-100 drop-shadow-md shadow-base-content rounded-md h-fit">
       <form onSubmit={onSubmit} className="flex flex-col p-6 gap-4">
         <h1 className="font-bold text-xl">Submit new Expense</h1>
         <div className="form-control">

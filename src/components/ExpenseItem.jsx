@@ -20,7 +20,7 @@ function ExpenseItem({ expense }) {
       <span className="flex flex-row items-center">
         <p className="text-sm">{new Date(expense.createdAt).toLocaleDateString("en-GB")}</p>
         <button onClick={handleDelete}>
-          <TrashIcon className="h-6 w-6 mx-4 rounded-md bg-white hover:drop-shadow-md " />
+          <TrashIcon className="h-6 w-6 mx-4 rounded-md bg-base-100 hover:drop-shadow-md " />
         </button>
       </span>
     </span>

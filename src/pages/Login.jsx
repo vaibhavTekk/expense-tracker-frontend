@@ -43,7 +43,7 @@ function Login() {
 
   return (
     <div className="flex flex-col justify-items-center items-center h-full">
-      <div className="flex flex-col mx-auto md:w-1/4 w-4/5 my-auto justify-evenly items-center bg-white drop-shadow-lg rounded-lg p-6">
+      <div className="flex flex-col mx-auto md:w-1/4 w-4/5 my-auto justify-evenly items-center bg-base-100 drop-shadow-lg rounded-lg p-6">
         <h1 className="text-2xl font-bold m-4">Login</h1>
         <form onSubmit={onSubmit} className="flex flex-col items-center gap-4 w-full">
           <input

@@ -11,7 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <div className="bg-[url('./img/bg.svg')] bg-bottom bg-no-repeat bg-contain">
+    <div className="bg-base-200 bg-[url('./img/bg.svg')] bg-bottom bg-no-repeat bg-contain" data-theme="dark">
       <div className="flex flex-col h-screen overflow-y-scroll">
         <BrowserRouter>
           <Navbar />
@@ -23,7 +23,6 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
-        <p className="text-white font-semibold mt-4 mb-6 text-center justify-self-end">Made with 💖 by Vaibhav T S</p>
       </div>
       <ToastContainer />
     </div>
