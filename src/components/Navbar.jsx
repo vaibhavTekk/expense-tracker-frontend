@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { logout, reset } from "../features/auth/authSlice";
 import { useSelector, useDispatch } from "react-redux";
 
-function Navbar() {
+function Navbar({ toggleFunction }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.auth);
@@ -12,12 +12,16 @@ function Navbar() {
     dispatch(reset());
     navigate("/");
   };
+
   return (
     <div className="h-auto flex flex-row w-auto bg-base-300 items-center justify-between md:px-8 px-2 py-2">
       <Link to="/">
         <h1 className="font-bold text-2xl">Wallt.</h1>
       </Link>
-      <ul className="flex flex-row items-center">
+      <ul className="flex flex-row items-center justify-items-center">
+        <li>
+          <input type="checkbox" className="toggle" onClick={toggleFunction} />
+        </li>
         {user ? (
           <>
             <li>
