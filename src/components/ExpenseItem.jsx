@@ -12,15 +12,16 @@ function ExpenseItem({ expense }) {
   };
 
   return (
-    <span className="flex flex-row md:px-2 px-1 justify-between">
-      <span className="flex flex-row items-center">
+    <span className="flex flex-row flex-wrap md:px-2 px-1 justify-between">
+      <span className="flex flex-row items-center gap-2">
         <p className="md:text-xl text-sm font-bold m-2">₹ {expense.amount}</p>
         <p className="text-sm">{expense.remarks}</p>
       </span>
-      <span className="flex flex-row items-center">
-        <p className="text-sm">{new Date(expense.createdAt).toLocaleDateString("en-GB")}</p>
+      <span className="flex flex-row items-center gap-2">
+        <p className="text-xs">{expense.category}</p>
+        <p className="text-sm">{new Date(expense.created).toLocaleDateString("en-GB")}</p>
         <button onClick={handleDelete}>
-          <TrashIcon className="h-6 w-6 mx-4 rounded-md bg-base-100 hover:drop-shadow-md " />
+          <TrashIcon className="h-6 w-6 mx-2 rounded-md bg-base-100 hover:drop-shadow-md " />
         </button>
       </span>
     </span>
