@@ -20,7 +20,7 @@ function Dashboard() {
     }
 
     if (isError) {
-      toast.error(message + " .Try Logging in again");
+      toast.error(message);
     }
 
     if (!user) {
@@ -39,7 +39,7 @@ function Dashboard() {
   }
 
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 md:px-8 px-4 md:pt-6 gap-4 h-auto">
+    <div className="grid md:grid-cols-2 grid-cols-1 md:px-8 px-4 md:pt-6 pt-6 gap-4 h-auto">
       <div className="flex flex-col gap-4">
         <Overview expenses={expenses} username={user.name} loading={isLoading} />
         <ExpenseList expenses={expenses} loading={isLoading} />
