@@ -31,7 +31,7 @@ function ExpenseItem({ expense }) {
           <button onClick={handleDelete}>
             <TrashIcon className="h-6 w-6 m-2 rounded-md bg-base-100 hover:drop-shadow-md " />
           </button>
-          <label class="swap swap-rotate m-2 rounded-md bg-base-100 hover:drop-shadow-md">
+          <label className="swap swap-rotate m-2 rounded-md bg-base-100 hover:drop-shadow-md">
             <input type="checkbox" onClick={toggleremark} />
             <ChevronDownIcon className="swap-off h-6 w-6" />
             <ChevronUpIcon className="swap-on h-6 w-6" />

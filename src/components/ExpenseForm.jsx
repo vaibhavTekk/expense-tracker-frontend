@@ -55,10 +55,7 @@ function ExpenseForm() {
           placeholder="Remarks"
           className="input input-bordered w-full"
           value={date}
-          onChange={(e) => {
-            setDate(e.target.value);
-            console.log(e.target.value);
-          }}
+          onChange={(e) => setDate(e.target.value)}
         />
         <input type="submit" className="btn btn-primary" value="submit" />
       </form>
