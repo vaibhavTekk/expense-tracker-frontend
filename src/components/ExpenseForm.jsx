@@ -48,6 +48,8 @@ function ExpenseForm() {
           <option value="Miscellaneous 💵">Miscellaneous 💵</option>
           <option value="Entertainment 🍿">Entertainment 🍿</option>
           <option value="Rent 🏚️">Rent 🏚️</option>
+          <option value="Food 🍌">Food 🍌</option>
+          <option value="Health 💊">Health 💊</option>
           <option value="Transport 🚌">Transport 🚌</option>
         </select>
         <input
