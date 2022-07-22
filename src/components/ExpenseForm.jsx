@@ -13,8 +13,6 @@ function ExpenseForm() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(date);
-    console.log(categ);
     const expensedata = { amount, remarks, created: date, category: categ };
     dispatch(post(expensedata));
     setamount(0);
