@@ -1,4 +1,10 @@
-# Getting Started with Create React App and Redux
+# Wallt - A Simple Expense Tracker App
+
+A Simple Expense Tracker app built using MERN stack
+##### Use Email : 123@123 and Password : abc to try out the app
+### Live Link [https://wallt.vercel.app/](https://wallt.vercel.app/)
+
+### Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
