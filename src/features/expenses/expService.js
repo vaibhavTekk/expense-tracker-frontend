@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://vaibwalltexpensetracker.herokuapp.com/api/expense/";
+const API_URL = `${process.env.REACT_APP_API_URL}api/expense/`;
 
 const getExpenses = async (token) => {
   const config = { headers: { Authorization: `Bearer ${token}` } };

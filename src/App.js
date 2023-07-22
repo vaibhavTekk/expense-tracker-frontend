@@ -20,6 +20,7 @@ function App() {
     }
   };
 
+  console.log(process.env.REACT_APP_API_URL)
   return (
     <div
       className="maincontent bg-base-200 bg-[url('./img/bg.svg')] bg-bottom bg-no-repeat bg-contain"
